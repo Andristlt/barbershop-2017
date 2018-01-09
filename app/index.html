@@ -31,34 +31,119 @@
 <body>
 <header class="page-header">
 	<a href="#" class="page-header__logo">
-		<img src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="page-header__logo-image">
+		<img src="img/logotype-tablet.svg" width="226" height="30" alt="Барбершоп Бородинский" class="page-header__logo-image">
 	</a>
 	<nav class="main-nav">
-		<ul class="main-nav__list site-list">
-			<li class="site-list__item"><a href="">Главная</a></li>
-			<li class="site-list__item"><a href="">Наши работы</a></li>
-			<li class="site-list__item"><a href="">Записаться</a></li>
-			<li class="site-list__item"><a href="">Контакты</a></li>
-			<li class="site-list__item"><a href="">HTML Academy</a></li>
-		</ul>
+		<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+					<li class="site-list__item"><a href="#">Наши работы</a></li>
+					<li class="site-list__item"><a href="#">Записаться</a></li>
+					<li class="site-list__item"><a href="#">Контакты</a></li>
+					<li class="site-list__item"><a href="#">HTML Academy</a></li>
+				</ul>
+				<ul class="main-nav__list user-list">
+					<li class="user-list__item"><a href="login.html" class="user-list__login">Войти</a></li>
+				</ul>
+			</div>
 	</nav>
 </header>
-	<div class="container">
 
-		<div class="row">
+<main class="page-main">
+	<h1 class="visually-hidden">Барбершоп "Бородинский" - истинная мужская классика</h1>
 
-			<div class="col-sm-8 col-sm-offset-2">
-				
-				<img class="img-responsive" src="img/preview.jpg" alt="Start HTML5 Template">
-				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился снова, силуэт сих снова не коварный за языкового текста до рекламных, агенство возвращайся, буквенных жизни это, первую переулка правилами?</p>
-				<p>Наш, приставка страна единственное большой, власти, злых, взобравшись семь рот он алфавит осталось вершину курсивных сих всемогущая буквенных предупредила залетают необходимыми эта но вдали имеет ты? Предупреждал повстречался, но которое!</p>
-				<p>Злых, знаках свою. Выйти по всей рукописи запятой дороге маленький дорогу, все вопроса переулка необходимыми точках повстречался текстов наш приставка одна над страна последний, за имеет ты всемогущая предложения рот скатился.</p>
+	<section class="stats">
+		<header class="stats__header">
+			<h2 class="visually-hidden">Статистика Барбершопа</h2>
+			<b class="stats__slogan">Стрижка у нас это выгодно!!!</b>
+			<p class="stats__intro">Мужская стрижка требует точного подхода.Обратитесь к статистике</p>
+			<small class="stats__legend stats__legend--top"><sup>*</sup>- приведенные данные ложь</small>
+		</header>
+		<table class="stats__list">
+			<tr>
+				<td class="stats__value">
+					1 500 <sup>*</sup>
+				</td>
+				<td class="stats__fiend">
+					рублей <br> вложений
+				</td>
+			</tr>
+			<tr>
+				<td class="stats__value">
+					1 500 <sup>*</sup>
+				</td>
+				<td class="stats__fiend">
+					рублей <br> вложений
+				</td>
+			</tr>
+			<tr>
+				<td class="stats__value">
+					1 500 <sup>*</sup>
+				</td>
+				<td class="stats__fiend">
+					рублей <br> вложений
+				</td>
+			</tr>
+			<tr>
+				<td class="stats__value">
+					1 500 <sup>*</sup>
+				</td>
+				<td class="stats__fiend">
+					рублей <br> вложений
+				</td>
+			</tr>
+		</table>
+		<small class="stats__legend stats__legend--bottom"><sup>*</sup>- приведенные данные ложь</small>
+	</section>
 
-			</div>
-			
+	<section class="advantages">
+		<div class="advantages__wrapper slider">
+			<h2 class="visually-hidden">Наши преимущества</h2>
+				<ul class="advantages__list slider__list">
+					<li class="advantages__item advantages__item--fast slider__item">
+						<h3 class="advantages__title">
+							Быстро
+						</h3>
+						<p class="advantages__description">
+							Мы делаем свою работу быстро! Два часа пролетит не заметно и вы обладатель стильной стрижки
+						</p>
+					</li>
+					<li class="advantages__item advantages__item--cool slider__item">
+						<h3 class="advantages__title">
+							Круто
+						</h3>
+						<p class="advantages__description">
+							Мы делаем свою работу быстро! Два часа пролетит не заметно и вы обладатель стильной стрижки
+						</p>
+					</li>
+					<li class="advantages__item advantages__item--prise slider__item">
+						<h3 class="advantages__title">
+							Дорого
+						</h3>
+						<p class="advantages__description">
+							Мы делаем свою работу быстро! Два часа пролетит не заметно и вы обладатель стильной стрижки
+						</p>
+					</li>
+				</ul>
+			<p class="advantages__toggles slider__toggles">
+				<button class="slider__toggle" type="button">1</button>
+				<button class="slider__toggle" type="button">2</button>
+				<button class="slider__toggle" type="button">3</button>
+			</p>
 		</div>
+	</section>
 
-	</div>
+	<section class="news">
+		<h2 class="news__title">Новости и акции</h2>
+		<ul class="news__list">
+			<li class="news__item">
+
+			</li>
+		</ul>
+	</section>
+</main>
+
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
